@@ -128,3 +128,7 @@ webmaster_verifications:
   yandex: config_yml__webmaster_yandex
 
 lang: en_US
+
+collections:
+  themes:
+  hotTopics:
