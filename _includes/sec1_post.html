@@ -1,0 +1,34 @@
+
+<section id="themes">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Explore themes</h1>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-8">
+          <p>Based on four questions regarding business conditions we calculate a CFO index and analyse the result</p>
+      </div>
+  </div>
+
+{% for theme in site.themes %}
+      <div class="col-md-6">
+          <img class="post-image" src="{{ site.url }}{{  site.baseurl }}/{{theme.image_path }}" alt="{{ theme.title }}">
+          <div class="post-content">
+            <h1 class="post-title"> {{ theme.title | capitalize }}</h1>
+            <p class="post-except"> {{ theme.post_except }} </p>
+            <a href="{{ theme.url }}"> Read more > </a>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <img class="post-image" src="{{ site.url }}{{  site.baseurl }}/{{theme.image_path }}" alt="{{ theme.title }}">
+          <div class="post-content">
+            <h1 class="post-title"> {{ theme.title | capitalize }}</h1>
+            <p class="post-except"> {{ theme.post_except }} </p>
+            <a href="{{ theme.url }}"> Read more > </a>
+          </div>
+      </div>
+
+  {% endfor %}
+
+</section>
