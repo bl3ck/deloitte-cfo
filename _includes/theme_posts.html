@@ -3,17 +3,15 @@
     <div class="row">
       {% for post in site.categories.themes %}
         <div class="col-md-6 post-grid">
-            <div class="row">
-              <img src="{{ post.image_path }}" alt="{{ post.title | capitalize  }}">
-            </div>
+          <img src="{{ post.image_path }}" alt="{{ post.title | capitalize  }}">
             <div class="content-post">
-              <div class="row bg">
+              <div class="bg">
                   <h2>{{ post.title | capitalize  }}</h2>
               </div>
-              <div class="row bg">
+              <div class="bg">
                 <p>{{ post.content | strip_html | truncate:110  }}</p>
               </div>
-              <div class="row bg">
+              <div class="bg">
                 <a href="{{ site.baseurl }}/{{ post.url }}">Read More</a>
               </div>
             </div>
