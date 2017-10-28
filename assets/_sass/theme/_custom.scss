@@ -6,21 +6,21 @@
 }
 @font-face {
     font-family: GothicMedium;
-    src: url("./fonts/GothicMedium.eot");
-    src: url("./fonts/GothicMedium.woff");
-    src: url("./fonts/GothicMedium.ttf");
+    src: url("./fonts/Gothic-Medium.eot");
+    src: url("./fonts/Gothic-Medium.woff");
+    src: url("./fonts/Gothic-Medium.ttf");
 }
 @font-face {
     font-family: GothamNarrowBook;
-    src: url("./fonts/Gotham-Narrow-Book.eot");
-    src: url("./fonts/Gotham-Narrow-Book.woff");
-    src: url("./fonts/Gotham-Narrow-Book.ttf");
+    src: url("./fonts/GothamNarrow-Book.eot");
+    src: url("./fonts/GothamNarrow-Book.woff");
+    src: url("./fonts/GothamNarrow-Book.ttf");
 }
 
 // Ensure all images are responsive
 img {
   height: auto;
-  max-width: 100%;
+  width: -webkit-fill-available;
 }
 
 // defaults for brand/logo
@@ -50,11 +50,18 @@ section#hero{
 .bg{
   background-color: #EAEAEA
 }
+
 .content-post{
-  padding-top: 3%;
-  padding-button: 7%
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
 }
 
 h2 {
   font-family: GothamBold !important
+}
+p,
+li a{
+  font-family: GothamNarrowBook;
+  font-size: 20px;
 }
