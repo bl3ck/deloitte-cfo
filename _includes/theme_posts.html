@@ -1,0 +1,24 @@
+
+<section id="theme-post">
+    <div class="row">
+      {% for post in site.categories.themes %}
+        <div class="col-md-6 post-grid">
+            <div class="row">
+              <img src="{{ post.image_path }}" alt="{{ post.title | capitalize  }}">
+            </div>
+            <div class="content-post">
+              <div class="row bg">
+                  <h2>{{ post.title | capitalize  }}</h2>
+              </div>
+              <div class="row bg">
+                <p>{{ post.content | strip_html | truncate:110  }}</p>
+              </div>
+              <div class="row bg">
+                <a href="{{ site.baseurl }}/{{ post.url }}">Read More</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+    </div>
+
+</section>

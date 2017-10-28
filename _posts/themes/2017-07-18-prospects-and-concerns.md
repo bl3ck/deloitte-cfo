@@ -1,21 +1,13 @@
 ---
 layout: post
-title:  "Styleguide"
 date:   2017-07-18 8:22:52 -0700
-last_modified_at: 2017-08-10 11:12:13 -0700
-categories: jekyll styleguide
-author: frontmatter_styleguide_author
-authors: ["frontmatter_styleguide_authors","Full Author Name", "author_name"]
+title: Prospects and Concerns
+image_path: "assets/images/themes/deloitte-hero.jpg"
+post_except: CFO's had a generally positive view of improvements in the financial positions of their own company
+categories: themes
 social:
   name: frontmatter_styleguide_social_name # If the user or organization name differs from the site's name
   date_modified: 2017-08-22 33:44:55 -0700
-  links:
-    - https://twitter.com/frontmatter_styleguide_social
-    - https://www.facebook.com/frontmatter_styleguide_social
-    - https://www.linkedin.com/in/frontmatter_styleguide_social
-    - https://plus.google.com/+frontmatter_styleguide_social
-    - https://keybase.io/frontmatter_styleguide_social
-    - https://github.com/frontmatter_styleguide_social
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
