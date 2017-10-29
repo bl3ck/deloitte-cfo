@@ -1,13 +1,12 @@
 
-<section id="theme-post">
+<section id="hottopic-post">
 
     <div class="no-padding col-md-12">
-      <h1>Explore themes</h1>
+      <h1>Hot Topics</h1>
       <p>Based on four questions regarding business conditions we calculate a CFO index and analyse the result</p>
     </div>
-
     <div class="row">
-      {% for post in site.categories.themes %}
+      {% for post in site.categories.hot-topics %}
         <div class="col-md-6 col-sm-12 post-grid">
           <div class="img-responsive">
             <img src="{{ post.image_path }}" alt="{{ post.title | capitalize  }}">

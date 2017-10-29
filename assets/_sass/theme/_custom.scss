@@ -19,8 +19,9 @@
 
 // Ensure all images are responsive
 img {
-  height: auto;
   width: -webkit-fill-available;
+  max-width: 100% ;
+  height: auto ;
 }
 
 // defaults for brand/logo
@@ -57,11 +58,53 @@ section#hero{
   padding-bottom: 20px;
 }
 
-h2 {
-  font-family: GothamBold !important
+h1,h2,h3 {
+  font-family: GothamBold
 }
-p,
-li a{
+
+a{
+  font-family: GothamNarrowBook;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p, li a{
   font-family: GothamNarrowBook;
   font-size: 20px;
 }
+//
+// footer .left-side{
+//   padding-right: 3%;
+// }
+footer .right-side{
+  padding-left: 5%;
+}
+footer .right-side p{
+  margin-bottom: 0;
+}
+span.name{
+  font-weight: bold;
+}
+.right-side .row{
+  padding-bottom: 10px
+}
+
+.logo-area{
+  display: inline-flex;
+}
+.logo-area h1{
+  margin-right: 10%;
+}
+
+.no-padding{
+  padding-left: 0;
+  padding-bottom: 3%;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+   h1 {
+     font-size:1.8em;
+   }
+ }
