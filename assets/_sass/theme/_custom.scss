@@ -85,12 +85,14 @@ p, li a{
   font-family: GothamNarrowBook;
   font-size: 20px;
 }
-//
-// footer .left-side{
-//   padding-right: 3%;
-// }
+
+footer .left-side{
+  padding-top: 4%;
+  padding-left: 0;
+}
 footer .right-side{
-  padding-left: 5%;
+  padding-left: 8%;
+  padding-top: 4%;
 }
 footer .right-side p{
   margin-bottom: 0;
@@ -104,9 +106,11 @@ span.name{
 
 .logo-area{
   display: inline-flex;
+  margin-top: 0;
 }
 .logo-area h1{
   margin-right: 10%;
+  margin-top: 0;
 }
 
 .no-padding{
@@ -205,12 +209,23 @@ i.fa-envelope:hover{
 #topis ul li{
   padding-bottom: 2%;
 }
-footer{
-  padding-bottom: 10%;
+footer .col-md-12{
+  padding-bottom: 8%;
+  border-top: #D5D9D9;
+    border-style: solid;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
 }
-section#copyright{
-  padding-bottom: 10%;
+section#copyright .col-md-12{
+  padding-bottom: 8%;
 }
 section#copyright p{
   float: right;
+}
+span.green{
+  color: #7CC241;
+}
+section#dwn-btn a span{
+  color: black;
 }
