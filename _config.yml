@@ -15,6 +15,10 @@ description: Deloitte CFO Website
 baseurl: "/deloitte-cfo" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+hero_header: The Deloitte/SEP CFO survey
+hero_header_mid: Signs of relief and growth opportunities
+hero_header_buttom: Autumn 2017 Results
+
 ## SITE NAVIGATION
 # By default, all pages in your site are added to navigation.
 # If you want to link only specific pages or posts in your header, uncomment
@@ -23,6 +27,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #header_pages:
 # - about.md
 
+permalink: /blog/:categories/:title
 
 plugins:
   - jekyll-feed             # SEO generate an Atom (RSS-like) feed of your Jekyll posts — https://github.com/jekyll/jekyll-feed
@@ -75,6 +80,9 @@ sass:
     sass_dir: assets/_sass
     style: compressed #nested expanded compact compressed
 
+collections:
+  - sponsors
+  - statistics
 # JEKYLL-REDIRECT-FROM
 # If you're using Jekyll in safe mode to mimic GitHub Pages, make sure to add
 # jekyll-redirect-from to your whitelist:

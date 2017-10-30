@@ -1,0 +1,29 @@
+---
+layout: default
+title: Themes
+category: theme
+---
+
+<div class="row">
+  <div class="col-md-12">
+      <h1>Blog : Themes</h1>
+  </div>
+  {% for post in site.posts %}
+    <div class="col-md-12 col-sm-12 post-grid">
+      <div class="col-md-4 img-responsive">
+        <img src="{{site.url}}{{site.baseurl}}/{{ post.image_path }}" alt="{{ post.title | capitalize  }}">
+      </div>
+        <div class="col-md-8 content-post bg">
+          <div class="post-heading">
+              <h2>{{ post.title | capitalize  }}</h2>
+          </div>
+          <div class="">
+            <p>{{ post.content | strip_html | truncate:130  }}</p>
+          </div>
+          <div class="">
+            <a href="{{ site.baseurl }}/{{ post.url }}">Read More</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+</div>

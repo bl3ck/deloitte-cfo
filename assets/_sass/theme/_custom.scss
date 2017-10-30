@@ -19,7 +19,7 @@
 
 // Ensure all images are responsive
 img {
-  width: -webkit-fill-available;
+  width: 100%;
   max-width: 100% ;
   height: auto ;
 }
@@ -41,9 +41,41 @@ img {
 
 section#hero{
   background-image: url("./images/hero.jpg");
-  height: 65vh;
+  height: 55vh;
   margin-top: 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
+section#hero h1,
+section#hero h4 {
+  color: white;
+  padding-bottom: 3%;
+  padding-left: 6%;
+}
+
+#fancy-box{
+  background-color: rgba(103, 131, 143, 0.66);
+  margin-left: 4%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+//
+h1.hero-heading{
+  font-size: 52px;
+  // padding-bottom: 5%;
+}
+h4.hero-heading-v4{
+  font-size: 25px;
+}
+// h4.hero-heading-v4:last-child{
+//   padding-top: 5%;
+// }
+//
+// h4{
+//   font-family: GothamBold;
+// }
 
 .post-grid{
   padding-right: 2%;
@@ -148,7 +180,15 @@ section#services{
    h1 {
      font-size:1.8em;
    }
+   h1.hero-heading{
+     font-size: 7vw;
+     // padding-bottom: 5%;
+   }
+   h4.hero-heading-v4{
+     font-size: 5vw;
+   }
  }
+
 
 
  /*=========================
